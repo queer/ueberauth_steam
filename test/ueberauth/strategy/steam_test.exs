@@ -161,8 +161,8 @@ defmodule Ueberauth.Strategy.SteamTest do
     test "info", %{conn: conn} do
       assert Steam.info(conn) == %Ueberauth.Auth.Info{
              image: "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/f3/f3dsf34324eawdasdas3rwe.jpg",
-             location: "NL", name: "Sample Sample",
-             urls: %{Steam: "http://steamcommunity.com/id/sample/"}}
+             location: "NL", name: "Sample Sample", nickname: "Sample",
+             urls: %{steam_profile: "http://steamcommunity.com/id/sample/"}}
     end
 
     test "extra", %{conn: conn} do
